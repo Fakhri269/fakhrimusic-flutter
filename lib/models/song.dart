@@ -1,0 +1,49 @@
+class Song {
+  final int id;
+  final String title;
+  final String artist;
+  final String album;
+  final String genre;
+  final int duration;
+  final String cover;
+  final int startSeconds;
+  final int plays;
+  final bool liked;
+  final String youtubeId;
+
+  Song({
+    required this.id,
+    required this.title,
+    required this.artist,
+    required this.album,
+    required this.genre,
+    required this.duration,
+    required this.cover,
+    required this.startSeconds,
+    required this.plays,
+    required this.liked,
+    required this.youtubeId,
+  });
+}
+
+final List<Song> initialSongs = [
+  Song(id: 1, title: "Peaches", artist: "Justin Bieber ft. Daniel Caesar, Giveon", album: "Justice", genre: "Pop", duration: 198, cover: "https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png", startSeconds: 0, plays: 1500000000, liked: true, youtubeId: "ay9y3CTkT40"),
+  Song(id: 2, title: "STAY", artist: "The Kid LAROI, Justin Bieber", album: "F*CK LOVE 3: OVER YOU", genre: "Pop", duration: 141, cover: "https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png", startSeconds: 0, plays: 2800000000, liked: false, youtubeId: "rkYlZnIbe2E"),
+  Song(id: 3, title: "Ghost", artist: "Justin Bieber", album: "Justice", genre: "Pop", duration: 152, cover: "https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png", startSeconds: 0, plays: 900000000, liked: false, youtubeId: "KRUWn3dLoRg"),
+  Song(id: 4, title: "Love Yourself", artist: "Justin Bieber", album: "Purpose", genre: "Pop", duration: 233, cover: "https://upload.wikimedia.org/wikipedia/en/2/27/Justin_Bieber_-_Purpose_%28Official_Album_Cover%29.png", startSeconds: 0, plays: 2100000000, liked: true, youtubeId: "WJUe3mr2gNM"),
+  Song(id: 5, title: "Blank Space", artist: "Taylor Swift", album: "1989", genre: "Pop", duration: 272, cover: "https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png", startSeconds: 0, plays: 3500000000, liked: false, youtubeId: "2mIBS3fHp6A"),
+  Song(id: 6, title: "Cruel Summer", artist: "Taylor Swift", album: "Lover", genre: "Pop", duration: 178, cover: "https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png", startSeconds: 0, plays: 1200000000, liked: true, youtubeId: "ic8j13piAhQ"),
+  Song(id: 7, title: "Just The Way You Are", artist: "Bruno Mars", album: "Doo-Wops & Hooligans", genre: "R&B", duration: 220, cover: "https://upload.wikimedia.org/wikipedia/en/e/eb/Bruno_Mars_-_Doo-Wops_%26_Hooligans.png", startSeconds: 0, plays: 2800000000, liked: false, youtubeId: "E-UJTGXof6Q"),
+  Song(id: 8, title: "Locked Out Of Heaven", artist: "Bruno Mars", album: "Unorthodox Jukebox", genre: "R&B", duration: 233, cover: "https://upload.wikimedia.org/wikipedia/en/0/07/Unorthodox_Jukebox.png", startSeconds: 0, plays: 1500000000, liked: false, youtubeId: "QTRaN-82Ip4"),
+  Song(id: 9, title: "Blinding Lights", artist: "The Weeknd", album: "After Hours", genre: "R&B", duration: 200, cover: "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png", startSeconds: 0, plays: 3800000000, liked: true, youtubeId: "fHI8X4OXluQ"),
+  Song(id: 10, title: "Starboy", artist: "The Weeknd ft. Daft Punk", album: "Starboy", genre: "R&B", duration: 230, cover: "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png", startSeconds: 0, plays: 2500000000, liked: false, youtubeId: "Rif-RTvmmss"),
+  Song(id: 11, title: "Rayuan Perempuan Gila", artist: "Nadin Amizah", album: "Untuk Dunia, Cinta, dan Kotornya", genre: "Indie Pop", duration: 302, cover: "https://upload.wikimedia.org/wikipedia/id/thumb/5/52/Nadin_Amizah_-_Untuk_Dunia%2C_Cinta%2C_dan_Kotornya.jpg/220px-Nadin_Amizah_-_Untuk_Dunia%2C_Cinta%2C_dan_Kotornya.jpg", startSeconds: 0, plays: 120000000, liked: false, youtubeId: "gIsoLyQX7W8"),
+  Song(id: 12, title: "Hati-Hati di Jalan", artist: "Tulus", album: "Manusia", genre: "Pop", duration: 242, cover: "https://upload.wikimedia.org/wikipedia/id/f/fb/Tulus_Manusia.jpeg", startSeconds: 0, plays: 350000000, liked: true, youtubeId: "_N6vSc_mT6I"),
+  Song(id: 13, title: "Sial", artist: "Mahalini", album: "Fabula", genre: "Pop", duration: 243, cover: "https://upload.wikimedia.org/wikipedia/id/3/36/Sial_-_Mahalini.jpg", startSeconds: 0, plays: 280000000, liked: false, youtubeId: "bDqyNUyIt-0"),
+  Song(id: 14, title: "bad guy", artist: "Billie Eilish", album: "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?", genre: "Pop", duration: 194, cover: "https://upload.wikimedia.org/wikipedia/en/3/38/Billie_Eilish_-_Bad_Guy.png", startSeconds: 0, plays: 2200000000, liked: false, youtubeId: "DyDfgMOUjCI"),
+  Song(id: 15, title: "Shape of You", artist: "Ed Sheeran", album: "÷ (Divide)", genre: "Acoustic", duration: 233, cover: "https://upload.wikimedia.org/wikipedia/en/4/45/Divide_cover.png", startSeconds: 0, plays: 3600000000, liked: true, youtubeId: "_dK2tDK9grQ"),
+  Song(id: 16, title: "Butter", artist: "BTS", album: "Butter", genre: "K-Pop", duration: 164, cover: "https://upload.wikimedia.org/wikipedia/en/d/db/BTS_-_Butter.png", startSeconds: 0, plays: 1200000000, liked: false, youtubeId: "WMweEpGlu_U"),
+  Song(id: 17, title: "Bohemian Rhapsody", artist: "Queen", album: "A Night at the Opera", genre: "Rock", duration: 354, cover: "https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png", startSeconds: 0, plays: 2500000000, liked: true, youtubeId: "fJ9rUzIMcZQ"),
+  Song(id: 18, title: "From The Start", artist: "Laufey", album: "Bewitched", genre: "Jazz", duration: 169, cover: "https://upload.wikimedia.org/wikipedia/en/5/5b/Laufey_-_From_the_Start.png", startSeconds: 0, plays: 500000000, liked: false, youtubeId: "1-Wk1fGg2oA"),
+  Song(id: 19, title: "Lose Yourself", artist: "Eminem", album: "8 Mile", genre: "Hip Hop", duration: 326, cover: "https://upload.wikimedia.org/wikipedia/en/4/41/Lose_Yourself.jpg", startSeconds: 0, plays: 2100000000, liked: true, youtubeId: "_Yhyp-_hX2s"),
+];
